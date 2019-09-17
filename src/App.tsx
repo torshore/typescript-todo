@@ -20,7 +20,7 @@ class App extends Component<{}, State> {
 
   private addTask = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
+   
     this.setState(previousState => ({
       newTask: {
         id: previousState.newTask.id + 1,
